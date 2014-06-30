@@ -6,6 +6,8 @@ $(document).ready(function(){
 
     var graphData = [];
     var graphColor = "black";
+    var fourError = "400-error";
+    var typeError = "type-error";
 
     // Count the # of times each attribute is cited in style sheet
     function countAttributes(data){
@@ -76,7 +78,12 @@ $(document).ready(function(){
             contentType: false,
             processData: false,
             success: function(data){
-                var parsedData = $.parseJSON(data);
+                if(data === fourError || data === typeError){
+                    $("#file-error").show();
+                }
+                else{
+                    var parsedData = $.parseJSON(data);
+                }
                 // Check if response is a success. If so, run DOM manipulation
                 if(parsedData.success === true){
                     $("#file-error").hide();
@@ -92,9 +99,6 @@ $(document).ready(function(){
                     $("#json-link").show().attr({
                         href: "processed/" +  parsedData.json_file
                     });
-                }
-                else{
-                    $("#file-error").show();
                 }
             }
         });
