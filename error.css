@@ -1,0 +1,296 @@
+body{
+    background-color: #eeebe1;
+}
+body a{
+    text-decoration: none;
+}
+body a:hover{
+	text-decoration: none;
+}
+body a:visited{
+	text-decoration: none;
+}
+body a:active{
+	text-decoration: none;
+}
+#overflowcontainer{
+    top: 61px;
+    width: 1200px;
+    position: absolute;
+    height: calc(100% - 135px);
+	min-height: 600px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background-color: #F8F7F3;
+    border-right: 2px solid #CCCCCC;
+    border-left: 2px solid #CCCCCC;
+    border-radius: 10px;
+    box-shadow: #cccbc2 0px 1px 5px;
+}
+#about_bar{
+    position: absolute;
+    background-color: #F8F7F3;
+    bottom: -65px;
+    width: 1200px;
+    height: 55px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: #cccbc2 0px 1px 5px;
+    z-index: 15;
+}
+#about_bar a, #about_bar a:hover{
+    color: #437D9C;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#about_bar_title{
+    position: absolute;
+    top: 5px;
+    left: 450px;
+    height: 20px;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+}
+#about_bar_transparency{
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    height: 20px;
+    width: 300px;
+}
+#about_bar_democracy{
+    position: absolute;
+    top: 30px;
+    left: 450px;
+    height: 20px;
+    width: 300px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+#about_bar_clean_engineering{
+    position: absolute;
+    top: 30px;
+    left: 750px;
+    height: 20px;
+    width: 300px;
+}
+#about_bar_bottom_space{
+    position: absolute;
+    bottom: -74px;
+    height: 74px;
+    width: 1200px;
+    z-index: 10px;
+}
+#headeroverflow{
+    top: 0px;
+    width: 100%;
+    min-width: 1200px;
+    height: 54px;
+    position: absolute;
+    background-color: #F8F7F3;
+    overflow: auto;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    border-bottom: solid 2px #CCCCCC;
+    box-shadow: #cccbc2 0px 1px 5px;
+}
+#header{
+	left: 0px;
+	right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 1200px;
+    overflow: hidden;
+    position: absolute;
+}
+#icon_container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 535px;
+}
+#swanbuckle_icon{
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    font-size: 40px;
+    font-weight: 600;
+    z-index: 15;
+}
+#control_container{
+	top: 19px;
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	border-bottom: solid 2px #CCCCCC;
+}
+#control_container_overflow{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+#controlpanel{
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    height: 35px;
+    direction: rtl;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    border: 1px solid #B2B2B2;
+    box-shadow: 0px 3px 2px 0px #A0A0A0;
+}
+#controlpanel .active{
+    border-radius: 5px;
+}
+#controlpanel .active a{
+    padding: 10px 15px 5px;
+}
+.control_nav{
+	font-size: 20px;
+}
+#controlpanel.stuck{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+    width: 875px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 25;
+}
+#controlpanel.stuck .active a{
+    padding: 10px 15px 10px !important;
+}
+#controlpanel.stuck .active a{
+    padding: 10px 15px 10px !important;
+}
+#controlpanel.control_panel_logged_in.stuck{
+    width: 890px;
+}
+.stuck .control_nav{
+	font-size: 30px !important;
+}
+#navbar{
+	top: 70px;
+	left: 0px;
+	position: absolute;
+	width: 300px;
+	height: 800px;
+}
+#loginscreen{
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    top: 200px;
+    height: 200px;
+    width: 400px;
+    display: none;
+    z-index: 25;
+    background-color: #F8F7F3;
+    border-radius: 5px;
+    border: solid 3px #B2B2B2;
+    box-shadow: #cccbc2 15px 15px 25px 10px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#loginscreenclose{
+    top: 0px;
+    right: 20px;
+    position: absolute;
+    width: 20px;
+    height: 5px;
+}
+#loginscreennoaccount{
+	position: absolute;
+	top: 15px;
+	left: 183px;
+	width: 250px;
+	height: 20px;
+	color: #CC0000;
+	display: none;
+}
+#loginscreenwrongpw{
+	position: absolute;
+	top: 15px;
+	left: 183px;
+	width: 200px;
+	height: 20px;
+	color: #CC0000;
+	display: none;
+}
+#forgot_password_form{
+	display: none;
+}
+#send_password_error{
+	color: red;
+	display: none;
+}
+#send_password_confirmation{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 60px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	display: none;
+}
+.overlay{
+    background-color: #F0F0F0;
+    filter:alpha(opacity=50); /*IE*/
+    opacity: 0.5; /*Safari, Opera*/
+    -moz-opacity:0.50; /*FireFox*/
+    z-index: 20;
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+#error_text{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 100px;
+	top: 100px;
+	text-align: center;
+}
+#error_image{
+	position: absolute;
+    top: 200px;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+#error_image img{
+    width: 300px;
+	height: 300px;
+}
+.errors{
+	color: red;
+	display: none;
+}

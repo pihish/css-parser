@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        I parse CSS files
+    </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jqBarGraph.1.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+        #file-error{
+            display: none;
+        }
+        #graph a{
+            display: none;
+            position: absolute;
+            bottom: -30px;
+        }
+        #css-link{
+            right: 0px;
+        }
+        #json-link{
+            right: 70px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="file">
+            Feed me a CSS file
+        </label>
+        <input id="file" type="file" placeholder="Upload a file">
+        <button id="button" type="button">
+            Upload
+        </button>
+        <div id="file-error">
+            Please make sure a CSS file is uploaded
+        </div>
+    </form>
+    <section id="graph">
+        <a id="css-link" target="_blank">CSS File</a>
+        <a id="json-link" target="_blank">Parsed JSON</a>
+    </section>
+</body>
+</html>
