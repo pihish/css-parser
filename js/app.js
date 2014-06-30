@@ -99,6 +99,7 @@ $(document).ready(function(){
                     $("#json-link").show().attr({
                         href: "processed/" +  parsedData.json_file
                     });
+                    $("#heading").show();
                 }
             }
         });
